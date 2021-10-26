@@ -26,7 +26,7 @@
             <div class="header__container container">
                 <div class="header__content"><a class="header__logo" href="/"><img class="header__img" src="../img/logo.png" alt="Logo Atmacode"></a>
                     <ul class="header__menu menu-header">
-                        <li class="menu-header__item"><a class="menu-header__link" href="#examples">Примеры расчета</a></li>
+                        <li class="menu-header__item"><a class="popup-link menu-header__link" href="#popup_2">Примеры расчета</a></li>
                         <li class="menu-header__item"><a class="menu-header__link" href="#reviews">Отзывы</a></li>
                     </ul><a class="header__login cta" href="https://my.atmacode.com/login/" target="_blank">Войти<img class="header__login_icon" src="../img/login.png" alt=""></a>
                 </div>
@@ -46,8 +46,19 @@
                 </ul>
             </div>
         </header>
+        <div class="popup examples" id="popup_2">
+            <div class="popup__body">
+                <div class="popup__content"><button class="modal__close popup__close close-popup"><img src="../img/close.svg" alt=""></button>
+                    <div class="examples__content"><img class="examples__img _1" src="../img/quizStars2.svg" alt="" loading="lazy"><img class="examples__img _2" src="../img/quizStars1.svg" alt="" loading="lazy">
+                        <div class="examples__title">Чтобы увидеть примеры расчётов на совместимость необходимо зарегистрироваться</div>
+                        <div class="examples__subtitle">Регистрация ни к чему не обязывает</div>
+                        <form class="examples__form" action="" method="post"><label class="examples__label">Введите ваше имя<input class="examples__input js__text" type="text" name="name" placeholder="Твоё имя" required></label><label class="examples__label">Введите ваш e-mail<input class="examples__input" type="email" name="email" placeholder="mail@mail.ru" required></label><button class="examples__submit cta" type="submit">Зарегистрироваться</button></form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="main__image image">
-            <div class="image__wrap"><img class="image__heart" src="../img/mainheart.png" alt="" loading="eager"><img class="image__pair" src="../img/mainpair.png" alt="" loading="eager"><img class="image__circle" src="../img/maincircle.png" alt="" loading="eager"><img class="image__bg" src="../img/mainbg.png" alt="" loading="eager"></div>
+            <div class="image__wrap"><img class="image__heart" src="../img/mainheart.png" alt="Сердце" loading="eager"><img class="image__pair" src="../img/mainpair.png" alt="Пара" loading="eager"><img class="image__circle" src="../img/maincircle.png" alt="Астрологический круг" loading="eager"><img class="image__bg" src="../img/mainbg.png" alt="" loading="eager"></div>
         </div>
         <div class="noise">
             <div class="noise__img"></div>
@@ -60,30 +71,30 @@
                         <h3 class="main__subtitle">Проверь вашу совместимость на основе 7 астрологических<br>факторов, проанализированных через современные нейросети</h3>
                         <div class="main__facts">
                             <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/heart.svg" alt=""></div>
+                                <div class="fact__img"><img src="../img/heart.svg" alt="Сердце"></div>
                                 <p class="fact__title">Счастье в совместной жизни</p>
                             </div>
                             <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/sex.svg" alt=""></div>
+                                <div class="fact__img"><img src="../img/sex.svg" alt="Символ МЖ"></div>
                                 <p class="fact__title">Секусальная совместимость</p>
                             </div>
                             <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/money.svg" alt=""></div>
+                                <div class="fact__img"><img src="../img/money.svg" alt="Деньги"></div>
                                 <p class="fact__title">Амбиции мужчины и ваш достаток</p>
                             </div>
                             <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/gift.svg" alt=""></div>
+                                <div class="fact__img"><img src="../img/gift.svg" alt="Подарок"></div>
                                 <p class="fact__title">Подарки и внимание</p>
                             </div>
                             <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/care.svg" alt=""></div>
+                                <div class="fact__img"><img src="../img/care.svg" alt="Забота"></div>
                                 <p class="fact__title">Верность и забота</p>
                             </div>
                             <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/child.svg" alt=""></div>
+                                <div class="fact__img"><img src="../img/child.svg" alt="Дети"></div>
                                 <p class="fact__title">Отношение к детям</p>
                             </div>
-                        </div><a class="main_cta cta" href="#">Узнать вашу совместимость</a>
+                        </div><a class="main_cta cta popup-link" href="#popup_1">Узнать вашу совместимость</a>
                     </div>
                 </div>
             </div>
@@ -96,31 +107,31 @@
                     <div class="synthesis__items">
                         <ul class="synthesis__list">
                             <li class="synthesis__item">
-                                <div class="synthesis__text">Астрология</div><img class="synthesis__img" src="../img/synthesis1.png" loading="lazy">
+                                <div class="synthesis__text">Астрология</div><img class="synthesis__img" src="../img/synthesis1.png" loading="lazy" alt="Астрология">
                             </li>
                             <li class="synthesis__item _toright">
-                                <div class="synthesis__text">Циклы Майя</div><img class="synthesis__img" src="../img/synthesis2.png" loading="lazy">
+                                <div class="synthesis__text">Циклы Майя</div><img class="synthesis__img" src="../img/synthesis2.png" loading="lazy" alt="Циклы Майя">
                             </li>
                             <li class="synthesis__item">
-                                <div class="synthesis__text">Нумерология</div><img class="synthesis__img" src="../img/synthesis3.png" loading="lazy">
+                                <div class="synthesis__text">Нумерология</div><img class="synthesis__img" src="../img/synthesis3.png" loading="lazy" alt="Нумерология">
                             </li>
                         </ul>
-                        <div class="synthesis__center"><img src="../img/synthesisCenter.png" alt="">
+                        <div class="synthesis__center"><img src="../img/synthesisCenter.png" alt="Нейросети" loading="lazy">
                             <div class="synthesis__text_center">Нейросети</div>
                         </div>
                         <ul class="synthesis__list">
                             <li class="synthesis__item">
-                                <div class="synthesis__text">Физиогномика</div><img class="synthesis__img" src="../img/synthesis4.png" loading="lazy">
+                                <div class="synthesis__text">Физиогномика</div><img class="synthesis__img" src="../img/synthesis4.png" loading="lazy" alt="Физиогномика">
                             </li>
                             <li class="synthesis__item _toleft">
-                                <div class="synthesis__text">Биоэнергетика</div><img class="synthesis__img" src="../img/synthesis5.png" loading="lazy">
+                                <div class="synthesis__text">Биоэнергетика</div><img class="synthesis__img" src="../img/synthesis5.png" loading="lazy" alt="Биоэнергетика">
                             </li>
                             <li class="synthesis__item">
-                                <div class="synthesis__text">Дизайн человека</div><img class="synthesis__img" src="../img/synthesis6.png" loading="lazy">
+                                <div class="synthesis__text">Дизайн человека</div><img class="synthesis__img" src="../img/synthesis6.png" loading="lazy" alt="Дизайн человека">
                             </li>
                         </ul>
                     </div>
-                    <div class="synthesis__heart heart"><img class="heart__img" src="../img/synHeart.png" alt="" loading="lazy"><span class="heart__line"></span><span class="heart__dots heart__dots_1"></span><span class="heart__dots heart__dots_2"></span></div>
+                    <div class="synthesis__heart heart"><img class="heart__img" src="../img/synHeart.png" alt="Сердце" loading="lazy"><span class="heart__line"></span><span class="heart__dots heart__dots_1"></span><span class="heart__dots heart__dots_2"></span></div>
                 </div>
             </div>
         </section>
@@ -153,7 +164,7 @@
                                     <li class="card__item">Общий потенциал отношений</li>
                                     <li class="card__item">Индивидуальный прогноз на каждый день</li>
                                 </ul>
-                                <div class="card__btn-block"><a class="card__cta cta" href="#">Начать проверку совместимости</a><span class="card__subtext">необходима регистрация</span></div>
+                                <div class="card__btn-block"><a class="card__cta cta open-popup" href="#"> Начать проверку совместимости</a><span class="card__subtext">необходима регистрация</span></div>
                             </div>
                         </div>
                     </div>
@@ -167,123 +178,124 @@
                 </div>
             </div>
         </section>
-        <section class="quiz">
-            <div class="quiz__container container">
-                <div class="quiz__content">
-                    <div class="quiz__title title"><span class="_color">Узнай свою совместимость</span> с партнером<br> по 10 сферам жизни за 3 минуты</div>
-                    <div class="quiz__card">
-                        <p class="quiz__header">Получи подробный отчет любовной совместимости о себе или другом человеке по 10 сферам жизни</p>
-                        <div class="quiz__body">
-                            <form class="form quiz__form" action="../quiz.php" method="POST">
-                                <fieldset class="form__fieldset" style="display: flex;">
-                                    <h3 class="form__title">На каком этапе ваши отношения на данный момент?</h3>
-                                    <div class="form__questions form__radio-qq"><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="Замужем">
-                                            <div class="form__choise"><img class="form__image" src="../img/stage1.jpg" alt="Замужем" loading="lazy">
-                                                <div class="form__answer">Замужем</div>
+        <div class="popup popup__quiz" id="popup_1">
+            <div class="popup__body">
+                <div class="popup__content"><button class="modal__close popup__close close-popup"><img src="../img/close.svg" alt=""></button>
+                    <div class="quiz">
+                        <div class="quiz__card">
+                            <p class="quiz__header">Получи подробный отчет любовной совместимости о себе или другом человеке по 10 сферам жизни</p>
+                            <div class="quiz__body">
+                                <form class="form quiz__form" action="../quiz.php" method="POST">
+                                    <fieldset class="form__fieldset" style="display: flex;">
+                                        <h3 class="form__title">На каком этапе ваши отношения на данный момент?</h3>
+                                        <div class="form__questions form__radio-qq"><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="Замужем">
+                                                <div class="form__choise"><img class="form__image" src="../img/stage1.jpg" alt="Замужем" loading="lazy">
+                                                    <div class="form__answer">Замужем</div>
+                                                </div>
+                                            </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="В гражданском браке">
+                                                <div class="form__choise"><img class="form__image" src="../img/stage2.jpg" alt="В гражданском браке" loading="lazy">
+                                                    <div class="form__answer">В гражданском браке</div>
+                                                </div>
+                                            </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="Помолвлена">
+                                                <div class="form__choise"><img class="form__image" src="../img/stage3.jpg" alt="Помолвлена" loading="lazy">
+                                                    <div class="form__answer">Помолвлена</div>
+                                                </div>
+                                            </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="Встречаемся">
+                                                <div class="form__choise"><img class="form__image" src="../img/stage4.jpg" alt="Встречаемся" loading="lazy">
+                                                    <div class="form__answer">Встречаемся</div>
+                                                </div>
+                                            </label></div>
+                                        <div class="form__button"><button class="form__btn-next">Далее<span class="btn-next__disabled"></span></button></div>
+                                    </fieldset>
+                                    <fieldset class="form__fieldset" style="display: none;">
+                                        <h3 class="form__title">С какой целью вы вступили в отношения?</h3>
+                                        <div class="form__questions form__radio-qq"><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Получение ярких позитивных эмоций">
+                                                <div class="form__choise"><img class="form__image" src="../img/goal1.jpg" alt="Получение ярких позитивных эмоций" loading="lazy">
+                                                    <div class="form__answer">Получение ярких<br>позитивных эмоций</div>
+                                                </div>
+                                            </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Достижение финансовой и психологической стабильности">
+                                                <div class="form__choise"><img class="form__image" src="../img/goal2.jpg" alt="Достижение финансовой и психологической стабильности" loading="lazy">
+                                                    <div class="form__answer little">Достижение финансовой и<br>психологической стабильности</div>
+                                                </div>
+                                            </label><label class="form__label form__label-radio active-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Создание семьи">
+                                                <div class="form__choise"><img class="form__image" src="../img/goal3.jpg" alt="Создание семьи" loading="lazy">
+                                                    <div class="form__answer">Создание семьи</div>
+                                                </div>
+                                            </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Получение поддержки">
+                                                <div class="form__choise"><img class="form__image" src="../img/goal4.jpg" alt="Получение поддержки" loading="lazy">
+                                                    <div class="form__answer">Получение поддержки</div>
+                                                </div>
+                                            </label></div>
+                                        <div class="form__button"><button class="form__btn-prev"></button><button class="form__btn-next">Далее<span class="btn-next__disabled"></span></button></div>
+                                    </fieldset>
+                                    <fieldset class="form__fieldset" style="display: none;">
+                                        <h3 class="form__title">Укажи свою дату рождения и своего мужчины</h3>
+                                        <div class="form__questions form__date-qq">
+                                            <div class="form__date-block">
+                                                <p class="form__label_icon _woman">Ваша дата рождения</p><label class="form__label form__label-date"><input class="form__date js-input_1" type="date" name="date[]" value="Дата рождения Женщины"></label>
                                             </div>
-                                        </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="В гражданском браке">
-                                            <div class="form__choise"><img class="form__image" src="../img/stage2.jpg" alt="В гражданском браке" loading="lazy">
-                                                <div class="form__answer">В гражданском браке</div>
+                                            <div class="form__date-block">
+                                                <p class="form__label_icon _man">Дата рождения мужчины</p><label class="form__label form__label-date"><input class="form__date js-input_2" type="date" name="date[]" value="Дата рождения Мужчины"></label>
                                             </div>
-                                        </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="Помолвлена">
-                                            <div class="form__choise"><img class="form__image" src="../img/stage3.jpg" alt="Помолвлена" loading="lazy">
-                                                <div class="form__answer">Помолвлена</div>
-                                            </div>
-                                        </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="Встречаемся">
-                                            <div class="form__choise"><img class="form__image" src="../img/stage4.jpg" alt="Встречаемся" loading="lazy">
-                                                <div class="form__answer">Встречаемся</div>
-                                            </div>
-                                        </label></div>
-                                    <div class="form__button"><button class="form__btn-next">Далее</button></div>
-                                </fieldset>
-                                <fieldset class="form__fieldset" style="display: none;">
-                                    <h3 class="form__title">С какой целью вы вступили в отношения?</h3>
-                                    <div class="form__questions form__radio-qq"><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Получение ярких позитивных эмоций">
-                                            <div class="form__choise"><img class="form__image" src="../img/goal1.jpg" alt="Получение ярких позитивных эмоций" loading="lazy">
-                                                <div class="form__answer">Получение ярких<br>позитивных эмоций</div>
-                                            </div>
-                                        </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Достижение финансовой и психологической стабильности">
-                                            <div class="form__choise"><img class="form__image" src="../img/goal2.jpg" alt="Достижение финансовой и психологической стабильности" loading="lazy">
-                                                <div class="form__answer little">Достижение финансовой и<br>психологической стабильности</div>
-                                            </div>
-                                        </label><label class="form__label form__label-radio active-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Создание семьи">
-                                            <div class="form__choise"><img class="form__image" src="../img/goal3.jpg" alt="Создание семьи" loading="lazy">
-                                                <div class="form__answer">Создание семьи</div>
-                                            </div>
-                                        </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Получение поддержки">
-                                            <div class="form__choise"><img class="form__image" src="../img/goal4.jpg" alt="Получение поддержки" loading="lazy">
-                                                <div class="form__answer">Получение поддержки</div>
-                                            </div>
-                                        </label></div>
-                                    <div class="form__button"><button class="form__btn-prev"></button><button class="form__btn-next">Далее</button></div>
-                                </fieldset>
-                                <fieldset class="form__fieldset" style="display: none;">
-                                    <h3 class="form__title">Укажи свою дату рождения и своего мужчины</h3>
-                                    <div class="form__questions form__date-qq">
-                                        <div class="form__date-block">
-                                            <p class="form__label_icon _woman">Ваша дата рождения</p><label class="form__label form__label-date"><input class="form__date js-input_1" type="date" name="date[]" value="Дата рождения Женщины"></label>
                                         </div>
-                                        <div class="form__date-block">
-                                            <p class="form__label_icon _man">Дата рождения мужчины</p><label class="form__label form__label-date"><input class="form__date js-input_2" type="date" name="date[]" value="Дата рождения Мужчины"></label>
+                                        <div class="form__button"><button class="form__btn-prev"></button><button class="form__btn-next">Далее<span class="btn-next__disabled"></span></button></div>
+                                    </fieldset>
+                                    <fieldset class="form__fieldset" style="display: none;">
+                                        <h3 class="form__title">Укажите свое место рождения и своего мужчины</h3>
+                                        <div class="form__questions form__city-qq">
+                                            <div class="form__city">
+                                                <p class="form__label-city form__label_icon _woman">Ваше место рождения</p><label class="form__heading">Введите страну<input class="form__text js__text" type="text" name="city[]" placeholder="Россия"></label><label class="form__heading">Введите город<input class="form__text js__text" type="text" name="city[]" placeholder="Москва"></label>
+                                            </div>
+                                            <div class="form__city">
+                                                <p class="form__label-city form__label_icon _man">Место рождения мужчины</p><label class="form__heading">Введите страну<input class="form__text js__text" type="text" name="city[]" placeholder="Россия"></label><label class="form__heading">Введите город<input class="form__text js__text" type="text" name="city[]" placeholder="Москва"></label>
+                                            </div>
                                         </div>
+                                        <div class="form__button"><button class="form__btn-prev"></button><button class="form__btn-next">Далее<span class="btn-next__disabled"></span></button></div>
+                                    </fieldset>
+                                    <fieldset class="form__fieldset form__reg" style="display: none;">
+                                        <h3 class="form__title">Зарегистрируйтесь</h3>
+                                        <p class="form__subtitle">И получите расчет вашей совместимости</p><label class="form__heading">Введите ваше имя<input class="form__text js__text" type="text" name="name" placeholder="Елена"></label><label class="form__heading">Введите ваш e-mail<input class="form__text" type="email" name="number" placeholder="mail@mail.ru"></label><button class="form__btn-submit" type="submit">Отправить<span class="btn-next__disabled"></span></button>
+                                    </fieldset>
+                                    <div class="form__send-block" style="display: none;"><img class="form__img_1" src="../img/quizStars2.svg" alt="" loading="lazy"><img class="form__img_2" src="../img/quizStars1.svg" alt="" loading="lazy">
+                                        <div class="form__title"><span class="name-block">Имя</span>, благодарим за обращение!</div>
+                                        <div class="form__subtext">На указанную почту <span class="mail-block">mail@mail.ru</span> отправлено письмо с подтверждением регистрации.</div>
+                                        <div class="form__subtext">В письме будет ссылка в сайт, перейдя по которой необходимо задать пароль<br> и можно начать пользоваться Atmacode.</div>
+                                        <div class="form__subtext">Ссылка действует 24 часа.</div><a class="form__btn-check" href="#">Проверить почту</a>
+                                        <div class="form__lasttext">Если письмо не пришло, обратитесь в службу поддержки <a href="mailto:info@atmacode.com">info@atmacode.com</a></div>
                                     </div>
-                                    <div class="form__button"><button class="form__btn-prev"></button><button class="form__btn-next">Далее</button></div>
-                                </fieldset>
-                                <fieldset class="form__fieldset" style="display: none;">
-                                    <h3 class="form__title">Укажите свое место рождения и своего мужчины</h3>
-                                    <div class="form__questions form__city-qq">
-                                        <div class="form__city">
-                                            <p class="form__label-city form__label_icon _woman">Ваше место рождения</p><label class="form__heading">Введите страну<input class="form__text" type="text" name="city[]" placeholder="Россия"></label><label class="form__heading">Введите город<input class="form__text" type="text" name="city[]" placeholder="Москва"></label>
-                                        </div>
-                                        <div class="form__city">
-                                            <p class="form__label-city form__label_icon _man">Место рождения мужчины</p><label class="form__heading">Введите страну<input class="form__text" type="text" name="city[]" placeholder="Россия"></label><label class="form__heading">Введите город<input class="form__text" type="text" name="city[]" placeholder="Москва"></label>
-                                        </div>
-                                    </div>
-                                    <div class="form__button"><button class="form__btn-prev"></button><button class="form__btn-next">Далее</button></div>
-                                </fieldset>
-                                <fieldset class="form__fieldset form__reg" style="display: none;">
-                                    <h3 class="form__title">Зарегистрируйтесь</h3>
-                                    <p class="form__subtitle">И получите расчет вашей совместимости</p><label class="form__heading">Введите ваше имя<input class="form__text" id="quiz__phone" type="text" name="name" placeholder="Елена"></label><label class="form__heading">Введите ваш e-mail<input class="form__text" id="quiz__phone" type="tel" name="number" placeholder="mail@mail.ru"></label><button class="form__btn-submit" type="submit">Отправить</button>
-                                </fieldset>
-                                <div class="form__send-block" style="display: none;"><img class="form__img_1" src="../img/quizStars2.svg" alt="" loading="lazy"><img class="form__img_2" src="../img/quizStars1.svg" alt="" loading="lazy">
-                                    <div class="form__title"><span class="name-block">Имя</span>, благодарим за обращение!</div>
-                                    <div class="form__subtext">На указанную почту <span class="mail-block">mail@mail.ru</span> отправлено письмо с подтверждением регистрации.</div>
-                                    <div class="form__subtext">В письме будет ссылка в сайт, перейдя по которой необходимо задать пароль<br> и можно начать пользоваться Atmacode.</div>
-                                    <div class="form__subtext">Ссылка действует 24 часа.</div><a class="form__btn-check" href="#">Проверить почту</a>
-                                    <div class="form__lasttext">Если письмо не пришло, обратитесь в службу поддержки mail@mail.ru</div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="quiz__footer">
-                            <div class="quiz__steps steps">
-                                <div class="steps__item active">
-                                    <div class="steps__title">Вопрос 1 из 5</div>
-                                </div>
-                                <div class="steps__item">
-                                    <div class="steps__title">Вопрос 2 из 5</div>
-                                </div>
-                                <div class="steps__item">
-                                    <div class="steps__title">Вопрос 3 из 5</div>
-                                </div>
-                                <div class="steps__item">
-                                    <div class="steps__title">Вопрос 4 из 5</div>
-                                </div>
-                                <div class="steps__item">
-                                    <div class="steps__title">Почти всё, остался 1 шаг</div>
-                                </div>
+                                </form>
                             </div>
-                            <div class="quiz__progress progress">
-                                <div class="progress__line line1 active"><span class="progress__color"></span></div>
-                                <div class="progress__line line2"><span class="progress__color"></span></div>
-                                <div class="progress__line line3"><span class="progress__color"></span></div>
-                                <div class="progress__line line4"><span class="progress__color"></span></div>
-                                <div class="progress__line line5"><span class="progress__color"></span></div>
+                            <div class="quiz__footer">
+                                <div class="quiz__steps steps">
+                                    <div class="steps__item active">
+                                        <div class="steps__title">Вопрос 1 из 5</div>
+                                    </div>
+                                    <div class="steps__item">
+                                        <div class="steps__title">Вопрос 2 из 5</div>
+                                    </div>
+                                    <div class="steps__item">
+                                        <div class="steps__title">Вопрос 3 из 5</div>
+                                    </div>
+                                    <div class="steps__item">
+                                        <div class="steps__title">Вопрос 4 из 5</div>
+                                    </div>
+                                    <div class="steps__item">
+                                        <div class="steps__title">Почти всё, остался 1 шаг</div>
+                                    </div>
+                                </div>
+                                <div class="quiz__progress progress">
+                                    <div class="progress__line line1 active"><span class="progress__color"></span></div>
+                                    <div class="progress__line line2"><span class="progress__color"></span></div>
+                                    <div class="progress__line line3"><span class="progress__color"></span></div>
+                                    <div class="progress__line line4"><span class="progress__color"></span></div>
+                                    <div class="progress__line line5"><span class="progress__color"></span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="qq"><img class="qq__cosmo" src="../img/cosmo3.png" alt=""><img class="qq__blobs" src="../img/Ellipse1.svg" alt="">
             <div class="qq__container container">
                 <div class="qq__content">
@@ -339,7 +351,7 @@
                                     <li class="card__item">Будет ли он изменять?</li>
                                     <li class="card__item">Как правильно планировать совместные путешествия?</li>
                                 </ul>
-                                <div class="card__btn-block"><a class="card__cta cta" href="http://">Начать проверку совместимости</a><span class="card__subtext">необходима регистрация</span></div>
+                                <div class="card__btn-block"><a class="card__cta cta open-popup" href="#">Начать проверку совместимости</a><span class="card__subtext">необходима регистрация</span></div>
                             </div>
                         </div>
                     </div>
@@ -385,7 +397,7 @@
                 <div class="pairs__content">
                     <h2 class="pairs__title title">Посмотри расчет совместимости известных пар</h2>
                     <div class="pairs__items">
-                        <div class="pairs__item pair-card _pair1"><img class="pair-card__img" src="../img/pair1.jpg" alt="" loading="lazy">
+                        <div class="pairs__item pair-card _pair1"><img class="pair-card__img" src="../img/pair1.jpg" alt="Ляйсан Утяшева и Павел Воля" loading="lazy">
                             <div class="pair-card__blocks">
                                 <div class="pair-card__left-block">
                                     <p class="pair-card__name">Ляйсан Утяшева</p>
@@ -402,7 +414,7 @@
                             <div class="pair-card__city-bg">Место рождения</div>
                             <p class="pair-card__marriage">В браке с 2012 года</p><a class="pair-card__cta cta" href="#">Посмотреть отчёт</a>
                         </div>
-                        <div class="pairs__item pair-card _pair2"><img class="pair-card__img" src="../img/pair2.jpg" alt="" loading="lazy">
+                        <div class="pairs__item pair-card _pair2"><img class="pair-card__img" src="../img/pair2.jpg" alt="Victoria Beckham и David Beckham" loading="lazy">
                             <div class="pair-card__blocks">
                                 <div class="pair-card__left-block">
                                     <p class="pair-card__name">Victoria Beckham</p>
@@ -419,7 +431,7 @@
                             <div class="pair-card__city-bg">Место рождения</div>
                             <p class="pair-card__marriage">В браке с 1999 года</p><a class="pair-card__cta cta" href="#">Посмотреть отчёт</a>
                         </div>
-                        <div class="pairs__item pair-card _pair3"><img class="pair-card__img" src="../img/pair3.jpg" alt="" loading="lazy">
+                        <div class="pairs__item pair-card _pair3"><img class="pair-card__img" src="../img/pair3.jpg" alt="Кристина Асмус и Гарик Харламов" loading="lazy">
                             <div class="pair-card__blocks">
                                 <div class="pair-card__left-block">
                                     <p class="pair-card__name">Кристина Асмус</p>
@@ -582,7 +594,7 @@
                 <div class="reg__content">
                     <h2 class="reg__title title">Проверь свои отношения прямо сейчас</h2>
                     <p class="reg__subtitle subtitle">И получить расчет совместимости со своим партнером</p>
-                    <form class="reg__form" action="" method="post"><label class="reg__label">Введите ваше имя<input class="reg__input" type="text" name="name" placeholder="Твоё имя" required></label><label class="reg__label">Введите ваш e-mail<input class="reg__input" type="email" name="email" placeholder="mail@mail.ru" required></label><button class="reg__submit cta" type="submit">Зарегистрироваться</button></form>
+                    <form class="reg__form" action="" method="post"><label class="reg__label">Введите ваше имя<input class="reg__input js__text" type="text" name="name" placeholder="Твоё имя" required></label><label class="reg__label">Введите ваш e-mail<input class="reg__input" type="email" name="email" placeholder="mail@mail.ru" required></label><button class="reg__submit cta" type="submit">Зарегистрироваться</button></form>
                 </div>
             </div>
         </section>
@@ -632,7 +644,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div><a class="card__cta cta" href="http://">Начать проверку совместимости</a>
+                        </div><a class="card__cta cta open-popup" href="#">Начать проверку совместимости</a>
                     </div>
                 </div>
             </div>
@@ -685,7 +697,7 @@
                                     <li class="card__item">Что его возбуждает?</li>
                                 </ul>
                             </div>
-                        </div><a class="card__cta cta" href="http://">Начать проверку совместимости</a>
+                        </div><a class="card__cta cta open-popup" href="#"> Начать проверку совместимости</a>
                     </div>
                 </div>
             </div>
@@ -730,7 +742,7 @@
                                     <li class="card__item">Что его возбуждает?</li>
                                 </ul>
                             </div>
-                        </div><a class="card__cta cta" href="http://">Начать проверку совместимости</a>
+                        </div><a class="card__cta cta open-popup" href="#">Начать проверку совместимости</a>
                     </div>
                 </div>
             </div>
@@ -755,124 +767,7 @@
                                     <li class="card__item _main-title"> Индивидуальный прогноз на каждый день</li>
                                     <li class="card__item">Что несет вам каждый день вашей жизни?</li>
                                     <li class="card__item">Какое событие может произойти с вами, в чем<br> заключается ваш личный урок в определенный день?</li>
-                                </ul><a class="card__cta cta" href="http://">Начать проверку совместимости</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="quiz2">
-            <div class="quiz__container container">
-                <div class="quiz__content">
-                    <div class="quiz__title title"><span class="_color">Узнай свою совместимость</span> с партнером<br> по 10 сферам жизни за 3 минуты</div>
-                    <div class="quiz__card">
-                        <p class="quiz__header">Получи подробный отчет любовной совместимости о себе или другом человеке по 10 сферам жизни</p>
-                        <div class="quiz__body">
-                            <form class="form quiz__form2" action="../quiz.php" method="POST">
-                                <fieldset class="form__fieldset" style="display: flex;">
-                                    <h3 class="form__title">На каком этапе ваши отношения на данный момент?</h3>
-                                    <div class="form__questions form__radio-qq"><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="Замужем">
-                                            <div class="form__choise"><img class="form__image" src="../img/stage1.jpg" alt="Замужем" loading="lazy">
-                                                <div class="form__answer">Замужем</div>
-                                            </div>
-                                        </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="В гражданском браке">
-                                            <div class="form__choise"><img class="form__image" src="../img/stage2.jpg" alt="В гражданском браке" loading="lazy">
-                                                <div class="form__answer">В гражданском браке</div>
-                                            </div>
-                                        </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="Помолвлена">
-                                            <div class="form__choise"><img class="form__image" src="../img/stage3.jpg" alt="Помолвлена" loading="lazy">
-                                                <div class="form__answer">Помолвлена</div>
-                                            </div>
-                                        </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="stage" value="Встречаемся">
-                                            <div class="form__choise"><img class="form__image" src="../img/stage4.jpg" alt="Встречаемся" loading="lazy">
-                                                <div class="form__answer">Встречаемся</div>
-                                            </div>
-                                        </label></div>
-                                    <div class="form__button"><button class="form__btn-next">Далее</button></div>
-                                </fieldset>
-                                <fieldset class="form__fieldset" style="display: none;">
-                                    <h3 class="form__title">С какой целью вы вступили в отношения?</h3>
-                                    <div class="form__questions form__radio-qq"><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Получение ярких позитивных эмоций">
-                                            <div class="form__choise"><img class="form__image" src="../img/goal1.jpg" alt="Получение ярких позитивных эмоций" loading="lazy">
-                                                <div class="form__answer">Получение ярких<br>позитивных эмоций</div>
-                                            </div>
-                                        </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Достижение финансовой и психологической стабильности">
-                                            <div class="form__choise"><img class="form__image" src="../img/goal2.jpg" alt="Достижение финансовой и психологической стабильности" loading="lazy">
-                                                <div class="form__answer little">Достижение финансовой и<br>психологической стабильности</div>
-                                            </div>
-                                        </label><label class="form__label form__label-radio active-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Создание семьи">
-                                            <div class="form__choise"><img class="form__image" src="../img/goal3.jpg" alt="Создание семьи" loading="lazy">
-                                                <div class="form__answer">Создание семьи</div>
-                                            </div>
-                                        </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Получение поддержки">
-                                            <div class="form__choise"><img class="form__image" src="../img/goal4.jpg" alt="Получение поддержки" loading="lazy">
-                                                <div class="form__answer">Получение поддержки</div>
-                                            </div>
-                                        </label></div>
-                                    <div class="form__button"><button class="form__btn-prev"></button><button class="form__btn-next">Далее</button></div>
-                                </fieldset>
-                                <fieldset class="form__fieldset" style="display: none;">
-                                    <h3 class="form__title">Укажи свою дату рождения и своего мужчины</h3>
-                                    <div class="form__questions form__date-qq">
-                                        <div class="form__date-block">
-                                            <p class="form__label_icon _woman">Ваша дата рождения</p><label class="form__label form__label-date"><input class="form__date js-input_1" type="date" name="date[]" value="Дата рождения Женщины"></label>
-                                        </div>
-                                        <div class="form__date-block">
-                                            <p class="form__label_icon _man">Дата рождения мужчины</p><label class="form__label form__label-date"><input class="form__date js-input_2" type="date" name="date[]" value="Дата рождения Мужчины"></label>
-                                        </div>
-                                    </div>
-                                    <div class="form__button"><button class="form__btn-prev"></button><button class="form__btn-next">Далее</button></div>
-                                </fieldset>
-                                <fieldset class="form__fieldset" style="display: none;">
-                                    <h3 class="form__title">Укажите свое место рождения и своего мужчины</h3>
-                                    <div class="form__questions form__city-qq">
-                                        <div class="form__city">
-                                            <p class="form__label-city form__label_icon _woman">Ваше место рождения</p><label class="form__heading">Введите страну<input class="form__text" type="text" name="city[]" placeholder="Россия"></label><label class="form__heading">Введите город<input class="form__text" type="text" name="city[]" placeholder="Москва"></label>
-                                        </div>
-                                        <div class="form__city">
-                                            <p class="form__label-city form__label_icon _man">Место рождения мужчины</p><label class="form__heading">Введите страну<input class="form__text" type="text" name="city[]" placeholder="Россия"></label><label class="form__heading">Введите город<input class="form__text" type="text" name="city[]" placeholder="Москва"></label>
-                                        </div>
-                                    </div>
-                                    <div class="form__button"><button class="form__btn-prev"></button><button class="form__btn-next">Далее</button></div>
-                                </fieldset>
-                                <fieldset class="form__fieldset form__reg" style="display: none;">
-                                    <h3 class="form__title">Зарегистрируйтесь</h3>
-                                    <p class="form__subtitle">И получите расчет вашей совместимости</p><label class="form__heading">Введите ваше имя<input class="form__text" id="quiz__phone" type="text" name="name" placeholder="Елена"></label><label class="form__heading">Введите ваш e-mail<input class="form__text" id="quiz__phone" type="tel" name="number" placeholder="mail@mail.ru"></label><button class="form__btn-submit" type="submit">Отправить</button>
-                                </fieldset>
-                                <div class="form__send-block" style="display: none;"><img class="form__img_1" src="../img/quizStars2.svg" alt="" loading="lazy"><img class="form__img_2" src="../img/quizStars1.svg" alt="" loading="lazy">
-                                    <div class="form__title"><span class="name-block">Имя</span>, благодарим за обращение!</div>
-                                    <div class="form__subtext">На указанную почту <span class="mail-block">mail@mail.ru</span> отправлено письмо с подтверждением регистрации.</div>
-                                    <div class="form__subtext">В письме будет ссылка в сайт, перейдя по которой необходимо задать пароль<br> и можно начать пользоваться Atmacode.</div>
-                                    <div class="form__subtext">Ссылка действует 24 часа.</div><a class="form__btn-check" href="#">Проверить почту</a>
-                                    <div class="form__lasttext">Если письмо не пришло, обратитесь в службу поддержки mail@mail.ru</div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="quiz__footer">
-                            <div class="quiz__steps steps">
-                                <div class="steps__item active">
-                                    <div class="steps__title">Вопрос 1 из 5</div>
-                                </div>
-                                <div class="steps__item">
-                                    <div class="steps__title">Вопрос 2 из 5</div>
-                                </div>
-                                <div class="steps__item">
-                                    <div class="steps__title">Вопрос 3 из 5</div>
-                                </div>
-                                <div class="steps__item">
-                                    <div class="steps__title">Вопрос 4 из 5</div>
-                                </div>
-                                <div class="steps__item">
-                                    <div class="steps__title">Почти всё, остался 1 шаг</div>
-                                </div>
-                            </div>
-                            <div class="quiz__progress progress">
-                                <div class="progress__line line1 active"><span class="progress__color"></span></div>
-                                <div class="progress__line line2"><span class="progress__color"></span></div>
-                                <div class="progress__line line3"><span class="progress__color"></span></div>
-                                <div class="progress__line line4"><span class="progress__color"></span></div>
-                                <div class="progress__line line5"><span class="progress__color"></span></div>
+                                </ul><a class="card__cta cta open-popup" href="#"> Начать проверку совместимости</a>
                             </div>
                         </div>
                     </div>
@@ -897,7 +792,7 @@
     <div id="particles-js"></div>
     <!--script(type="text/javascript" src="js/lib/dinamic.js")-->
     <script type="text/javascript" src="js/lib/quiz.js"></script>
-    <script type="text/javascript" src="js/lib/quiz2.js"></script>
+    <script type="text/javascript" src="js/lib/popup.js"></script>
     <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/bundle.js"></script>
 </body>

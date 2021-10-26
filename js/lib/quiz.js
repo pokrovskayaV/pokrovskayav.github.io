@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       steps[i].classList.add("active");
       lines[i + 1].classList.remove("active");
       lines[i].classList.add("active");
+      form.classList.remove('error');
     });
   }
 
@@ -60,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    //Проверка заполнения радио
+    //Проверка заполнения даты
 
     const valueDate = formItem.querySelectorAll(".form__date");
 
@@ -69,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
         date.addEventListener("change", (event) => {
           if (!(valueDate[0].value == "" || valueDate[1].value == "")) {
             btnsNext[formItemIndex].disabled = false;
+            form.classList.remove('error');
           } else {
             btnsNext[formItemIndex].disabled = true;
           }
@@ -92,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ) {
             //разблокировать кнопку именно эту
             btnsNext[formItemIndex].disabled = false;
+            form.classList.remove('error');
           } else {
             //заблокировать кнопку
             btnsNext[formItemIndex].disabled = true;
@@ -99,6 +102,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     }
+
+    //Появление ошибки при незаполненных полях
+
+    const errorBtns = formItem.querySelectorAll(".btn-next__disabled");
+
+    errorBtns.forEach((errorBtn) => {
+      errorBtn.addEventListener("click", () => {
+        errorBtn.parentElement.parentElement.parentElement.parentElement.classList.add('error');
+      });
+    });
+
+
+
+    //Проверка радио
 
     formItem.addEventListener("change", (event) => {
       const target = event.target;
@@ -108,6 +125,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (inputsChecked.length > 0) {
           //разблокировать кнопку именно эту
           btnsNext[formItemIndex].disabled = false;
+          form.classList.remove('error');
+
         } else {
           //заблокировать кнопку
           btnsNext[formItemIndex].disabled = true;
@@ -122,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (input === target) {
               input.parentNode.classList.add("active-radio");
               formItems[formItemIndex].classList.add("hidden");
-              /*setTimeout(nextSlide, 300);
+              setTimeout(nextSlide, 300);
 
               function nextSlide() {
                 formItems[formItemIndex].style.display = "none";
@@ -130,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 steps[formItemIndex].classList.remove("active");
                 steps[formItemIndex + 1].classList.add("active");
                 lines[formItemIndex + 1].classList.add("active");
-              }*/
+              }
             } else {
               input.parentNode.classList.remove("active-radio");
             }
@@ -144,31 +163,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+
+  let textInputs = document.querySelectorAll('.js__text');
+
+  textInputs.forEach((input)=> {
+    input.addEventListener('input', (e) => {
+      input.value = input.value.replace(/[^a-zа-яё\s]/gi, '');
+    })
+  })
+
+
   //Проверка текстовых блоков имя+почта
   const registrText = form.querySelectorAll(".form__reg .form__text");
   registrText.forEach((field) => {
     field.addEventListener("input", () => {
       if (!(registrText[0].value == "" || registrText[1].value == "")) {
-        //разблокировать кнопку именно эту
+        //разблокировать кнопку
         const name = document.querySelector(".name-block");
         const mail = document.querySelector(".mail-block");
         name.innerHTML = registrText[0].value;
         mail.innerHTML = registrText[1].value;
         btnSubmit.disabled = false;
+        document.querySelector('.quiz__body').classList.remove('error');
       } else {
         //заблокировать кнопку
         btnSubmit.disabled = true;
       }
     });
-    btnSubmit.addEventListener('click', (event) => {
-      event.preventDefault();
-      setTimeout(watchlastSlide, 200);
-      function watchlastSlide() {
-        form.querySelector(".form__reg").style.display = "none";
-        document.querySelector(".quiz__header").style.display = "none";
-        document.querySelector(".quiz__footer").style.display = "none";
-        lastSlide.style.display = "flex";
-      }
-    })
+  });
+
+//Кнопка отправки
+  btnSubmit.addEventListener("click", (event) => {
+    setTimeout(watchlastSlide, 200);
+    function watchlastSlide() {
+      form.querySelector(".form__reg").style.display = "none";
+      document.querySelector(".quiz__header").style.display = "none";
+      document.querySelector(".quiz__footer").style.display = "none";
+      lastSlide.style.display = "flex";
+    }
   });
 });
