@@ -114,7 +114,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-
     //Проверка радио
 
     formItem.addEventListener("change", (event) => {
