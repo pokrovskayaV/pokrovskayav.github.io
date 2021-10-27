@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="icon" href="../img/fav2.png">
+    <link rel="icon" href="../img/fav.png">
     <meta property="og:locale" content="ru_RU">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Узнай потенциал твоих отношений с мужчиной">
@@ -23,7 +23,7 @@
 <body>
     <div class="wrapper">
         <header class="header" id="header">
-            <div class="header__container container">
+            <div class="header__container container"><img class="image__circle" src="../img/maincircle.png" alt="Астрологический круг" loading="eager">
                 <div class="header__content"><a class="header__logo" href="/"><img class="header__img" src="../img/logo.png" alt="Logo Atmacode"></a>
                     <ul class="header__menu menu-header">
                         <li class="menu-header__item"><a class="popup-link menu-header__link" href="#popup_2">Примеры расчета</a></li>
@@ -38,11 +38,20 @@
                         <div class="bar btmBar"></div>
                     </div>
                 </div>
-                <div class="icon icon-apple"></div>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#pairs">Примеры расчета</a></li>
+                    <li class="menu-item"><a class="popup-link" href="#popup_2">Примеры расчета</a></li>
                     <li class="menu-item"><a href="#reviews">Отзывы</a></li>
-                    <li class="menu-item"><a href="https://my.atmacode.com/login/" target="_blank">Войти</a></li>
+                    <li class="menu-item"><a class="burger__login cta" href="https://my.atmacode.com/login/" target="_blank">Войти<img class="header__login_icon" src="../img/login.png" alt=""></a></li>
+                    <li class="menu-item">
+                        <div class="burger__links"><a href="https://t.me/atmacode" target="_blank">
+                                <div class="burger__link"><img src="../img/telegram.svg" alt=""><span>@atmacode</span></div>
+                            </a><a href="mailto:info@atmacode.com">
+                                <div class="burger__link"><img src="../img/mail.svg" alt=""><span>info@atmacode.com</span></div>
+                            </a></div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="burger__icons"><a class="burger__icon" href="https://www.instagram.com/atmacode/" target="_blank"><img src="../img/inst.svg" alt=""></a><a class="burger__icon" href="/" target="_blank"><img src="../img/vk.svg" alt=""></a></div>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -57,9 +66,6 @@
                 </div>
             </div>
         </div>
-        <div class="main__image image">
-            <div class="image__wrap"><img class="image__heart" src="../img/mainheart.png" alt="Сердце" loading="eager"><img class="image__pair" src="../img/mainpair.png" alt="Пара" loading="eager"><img class="image__circle" src="../img/maincircle.png" alt="Астрологический круг" loading="eager"><img class="image__bg" src="../img/mainbg.png" alt="" loading="eager"></div>
-        </div>
         <div class="noise">
             <div class="noise__img"></div>
         </div>
@@ -68,38 +74,43 @@
                 <div class="main__content">
                     <div class="main__offer">
                         <h1 class="main__title">Узнай потенциал <br>твоих отношений <br>с мужчиной</h1>
-                        <h3 class="main__subtitle">Проверь вашу совместимость на основе 7 астрологических<br>факторов, проанализированных через современные нейросети</h3>
-                        <div class="main__facts">
-                            <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/heart.svg" alt="Сердце"></div>
-                                <p class="fact__title">Счастье в совместной жизни</p>
-                            </div>
-                            <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/sex.svg" alt="Символ МЖ"></div>
-                                <p class="fact__title">Секусальная совместимость</p>
-                            </div>
-                            <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/money.svg" alt="Деньги"></div>
-                                <p class="fact__title">Амбиции мужчины и ваш достаток</p>
-                            </div>
-                            <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/gift.svg" alt="Подарок"></div>
-                                <p class="fact__title">Подарки и внимание</p>
-                            </div>
-                            <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/care.svg" alt="Забота"></div>
-                                <p class="fact__title">Верность и забота</p>
-                            </div>
-                            <div class="main__fact fact">
-                                <div class="fact__img"><img src="../img/child.svg" alt="Дети"></div>
-                                <p class="fact__title">Отношение к детям</p>
-                            </div>
-                        </div><a class="main_cta cta popup-link" href="#popup_1">Узнать вашу совместимость</a>
+                        <h3 class="main__subtitle">Проверь вашу совместимость на основе 7 астрологических<br> факторов, проанализированных через современные нейросети</h3>
+                        <div class="main__btn-block">
+                            <div class="main__facts">
+                                <div class="main__fact fact">
+                                    <div class="fact__img"><img src="../img/heart.svg" alt="Сердце"></div>
+                                    <p class="fact__title">Счастье в совместной жизни</p>
+                                </div>
+                                <div class="main__fact fact">
+                                    <div class="fact__img"><img src="../img/sex.svg" alt="Символ МЖ"></div>
+                                    <p class="fact__title">Секусальная совместимость</p>
+                                </div>
+                                <div class="main__fact fact">
+                                    <div class="fact__img"><img src="../img/money.svg" alt="Деньги"></div>
+                                    <p class="fact__title">Амбиции мужчины и ваш достаток</p>
+                                </div>
+                                <div class="main__fact fact">
+                                    <div class="fact__img"><img src="../img/gift.svg" alt="Подарок"></div>
+                                    <p class="fact__title">Подарки и внимание</p>
+                                </div>
+                                <div class="main__fact fact">
+                                    <div class="fact__img"><img src="../img/care.svg" alt="Забота"></div>
+                                    <p class="fact__title">Верность и забота</p>
+                                </div>
+                                <div class="main__fact fact">
+                                    <div class="fact__img"><img src="../img/child.svg" alt="Дети"></div>
+                                    <p class="fact__title">Отношение к детям</p>
+                                </div>
+                            </div><a class="main_cta cta popup-link" href="#popup_1">Узнать вашу совместимость</a>
+                        </div>
+                    </div>
+                    <div class="main__image image">
+                        <div class="image__wrap"><img class="image__heart" src="../img/mainheart.png" alt="Сердце" loading="eager"><img class="image__pair" src="../img/mainpair.png" alt="Пара" loading="eager"><img class="image__circle" src="../img/maincircle.png" alt="Астрологический круг" loading="eager"><img class="image__bg" src="../img/mainbg.png" alt="" loading="eager"></div>
                     </div>
                 </div>
             </div>
         </main>
-        <section class="synthesis"><img class="synthesis__blobs" src="../img/Ellipse1.svg" alt="" loading="lazy"><img class="synthesis__cosmo" src="../img/cosmo3.png" alt="" loading="lazy">
+        <section class="synthesis" id="synthesis"><img class="synthesis__blobs" src="../img/Ellipse1.svg" alt="" loading="lazy"><img class="synthesis__cosmo" src="../img/cosmo3.png" alt="" loading="lazy">
             <div class="synthesis__container container">
                 <div class="synthesis__content">
                     <h2 class="synthesis__title title"><span class="_color">Синтез</span> 6 древнейших наук <br>и искусственного интеллекта</h2>
@@ -107,27 +118,27 @@
                     <div class="synthesis__items">
                         <ul class="synthesis__list">
                             <li class="synthesis__item">
-                                <div class="synthesis__text">Астрология</div><img class="synthesis__img" src="../img/synthesis1.png" loading="lazy" alt="Астрология">
+                                <p class="synthesis__text">Астрология</p><img class="synthesis__img" src="../img/synthesis1.png" loading="lazy" alt="Астрология">
                             </li>
                             <li class="synthesis__item _toright">
-                                <div class="synthesis__text">Циклы Майя</div><img class="synthesis__img" src="../img/synthesis2.png" loading="lazy" alt="Циклы Майя">
+                                <p class="synthesis__text">Циклы Майя</p><img class="synthesis__img" src="../img/synthesis2.png" loading="lazy" alt="Циклы Майя">
                             </li>
                             <li class="synthesis__item">
-                                <div class="synthesis__text">Нумерология</div><img class="synthesis__img" src="../img/synthesis3.png" loading="lazy" alt="Нумерология">
+                                <p class="synthesis__text">Нумерология</p><img class="synthesis__img" src="../img/synthesis3.png" loading="lazy" alt="Нумерология">
                             </li>
                         </ul>
                         <div class="synthesis__center"><img src="../img/synthesisCenter.png" alt="Нейросети" loading="lazy">
-                            <div class="synthesis__text_center">Нейросети</div>
+                            <p class="synthesis__text synthesis__text_center">Нейросети</p>
                         </div>
                         <ul class="synthesis__list">
                             <li class="synthesis__item">
-                                <div class="synthesis__text">Физиогномика</div><img class="synthesis__img" src="../img/synthesis4.png" loading="lazy" alt="Физиогномика">
+                                <p class="synthesis__text">Физиогномика</p><img class="synthesis__img" src="../img/synthesis4.png" loading="lazy" alt="Физиогномика">
                             </li>
                             <li class="synthesis__item _toleft">
-                                <div class="synthesis__text">Биоэнергетика</div><img class="synthesis__img" src="../img/synthesis5.png" loading="lazy" alt="Биоэнергетика">
+                                <p class="synthesis__text">Биоэнергетика</p><img class="synthesis__img" src="../img/synthesis5.png" loading="lazy" alt="Биоэнергетика">
                             </li>
                             <li class="synthesis__item">
-                                <div class="synthesis__text">Дизайн человека</div><img class="synthesis__img" src="../img/synthesis6.png" loading="lazy" alt="Дизайн человека">
+                                <p class="synthesis__text">Дизайн человека</p><img class="synthesis__img" src="../img/synthesis6.png" loading="lazy" alt="Дизайн человека">
                             </li>
                         </ul>
                     </div>
@@ -139,8 +150,7 @@
             <div class="love__container container">
                 <div class="love__content">
                     <div class="love__card card">
-                        <div class="card__shadow"></div>
-                        <h2 class="card__title title"><span class="_color">Полная проверка</span> любовной<br>совместимости по 10 сферам жизни</h2><img class="card__heart" src="../img/loveheart.png" alt="" loading="lazy">
+                        <h2 class="card__title title"><span class="_color">Полная проверка</span> любовной<br> совместимости по 10 сферам жизни</h2><img class="card__heart" src="../img/loveheart.png" alt="" loading="lazy">
                         <div class="card__content"><img class="card__constellation" src="../img/lovestars.svg" alt="">
                             <div class="card__review">
                                 <div class="card__video-block"><video class="card__video" src="../video/sati.mp4" preload="none" width="323" height="520" poster="../img/sati.jpg"></video><img class="card__play" src="../img/play.svg" alt=""></div>
@@ -164,7 +174,7 @@
                                     <li class="card__item">Общий потенциал отношений</li>
                                     <li class="card__item">Индивидуальный прогноз на каждый день</li>
                                 </ul>
-                                <div class="card__btn-block"><a class="card__cta cta open-popup" href="#"> Начать проверку совместимости</a><span class="card__subtext">необходима регистрация</span></div>
+                                <div class="card__btn-block" data-da="love__card, 4, 767"><a class="card__cta cta open-popup" href="#"> Начать проверку совместимости</a><span class="card__subtext">необходима регистрация</span></div>
                             </div>
                         </div>
                     </div>
@@ -211,11 +221,11 @@
                                         <h3 class="form__title">С какой целью вы вступили в отношения?</h3>
                                         <div class="form__questions form__radio-qq"><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Получение ярких позитивных эмоций">
                                                 <div class="form__choise"><img class="form__image" src="../img/goal1.jpg" alt="Получение ярких позитивных эмоций" loading="lazy">
-                                                    <div class="form__answer">Получение ярких<br>позитивных эмоций</div>
+                                                    <div class="form__answer">Получение ярких<br> позитивных эмоций</div>
                                                 </div>
                                             </label><label class="form__label form__label-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Достижение финансовой и психологической стабильности">
                                                 <div class="form__choise"><img class="form__image" src="../img/goal2.jpg" alt="Достижение финансовой и психологической стабильности" loading="lazy">
-                                                    <div class="form__answer little">Достижение финансовой и<br>психологической стабильности</div>
+                                                    <div class="form__answer little">Финансовая и<br> психологическая стабильность</div>
                                                 </div>
                                             </label><label class="form__label form__label-radio active-radio"><input class="form__radio _hidden" type="radio" name="goal" value="Создание семьи">
                                                 <div class="form__choise"><img class="form__image" src="../img/goal3.jpg" alt="Создание семьи" loading="lazy">
@@ -244,10 +254,12 @@
                                         <h3 class="form__title">Укажите свое место рождения и своего мужчины</h3>
                                         <div class="form__questions form__city-qq">
                                             <div class="form__city">
-                                                <p class="form__label-city form__label_icon _woman">Ваше место рождения</p><label class="form__heading">Введите страну<input class="form__text js__text" type="text" name="city[]" placeholder="Россия"></label><label class="form__heading">Введите город<input class="form__text js__text" type="text" name="city[]" placeholder="Москва"></label>
+                                                <p class="form__label-city form__label_icon _woman">Ваше место рождения</p>
+                                                <div class="form__cities-block"><label class="form__heading">Введите страну<input class="form__text js__text" type="text" name="city[]" placeholder="Россия"></label><label class="form__heading">Введите город<input class="form__text js__text" type="text" name="city[]" placeholder="Москва"></label></div>
                                             </div>
                                             <div class="form__city">
-                                                <p class="form__label-city form__label_icon _man">Место рождения мужчины</p><label class="form__heading">Введите страну<input class="form__text js__text" type="text" name="city[]" placeholder="Россия"></label><label class="form__heading">Введите город<input class="form__text js__text" type="text" name="city[]" placeholder="Москва"></label>
+                                                <p class="form__label-city form__label_icon _man">Место рождения мужчины</p>
+                                                <div class="form__cities-block"><label class="form__heading">Введите страну<input class="form__text js__text" type="text" name="city[]" placeholder="Россия"></label><label class="form__heading">Введите город<input class="form__text js__text" type="text" name="city[]" placeholder="Москва"></label></div>
                                             </div>
                                         </div>
                                         <div class="form__button"><button class="form__btn-prev"></button><button class="form__btn-next">Далее<span class="btn-next__disabled"></span></button></div>
@@ -399,54 +411,60 @@
                     <div class="pairs__items">
                         <div class="pairs__item pair-card _pair1"><img class="pair-card__img" src="../img/pair1.jpg" alt="Ляйсан Утяшева и Павел Воля" loading="lazy">
                             <div class="pair-card__blocks">
-                                <div class="pair-card__left-block">
+                                <div class="pair-card__name-block">
                                     <p class="pair-card__name">Ляйсан Утяшева</p>
-                                    <p class="pair-card__date">28.06.1985</p>
-                                    <p class="pair-card__city">Раевский,<br>Башкирская АССР</p>
-                                </div>
-                                <div class="pair-card__right-block">
                                     <p class="pair-card__name">Павел Воля</p>
+                                </div>
+                                <div class="pair-card__dates-bg">Дата рождения</div>
+                                <div class="pair-card__dates-block">
+                                    <p class="pair-card__date">28.06.1985</p>
                                     <p class="pair-card__date">14.03.1979</p>
+                                </div>
+                                <div class="pair-card__city-bg">Место рождения</div>
+                                <div class="pair-card__city-block">
+                                    <p class="pair-card__city">Раевский,<br>Башкирская АССР</p>
                                     <p class="pair-card__city">Пенза,<br>СССР</p>
                                 </div>
+                                <p class="pair-card__marriage">В браке с 2012 года</p><a class="pair-card__cta cta" href="#">Посмотреть отчёт</a>
                             </div>
-                            <div class="pair-card__dates-bg">Дата рождения</div>
-                            <div class="pair-card__city-bg">Место рождения</div>
-                            <p class="pair-card__marriage">В браке с 2012 года</p><a class="pair-card__cta cta" href="#">Посмотреть отчёт</a>
                         </div>
                         <div class="pairs__item pair-card _pair2"><img class="pair-card__img" src="../img/pair2.jpg" alt="Victoria Beckham и David Beckham" loading="lazy">
                             <div class="pair-card__blocks">
-                                <div class="pair-card__left-block">
+                                <div class="pair-card__name-block">
                                     <p class="pair-card__name">Victoria Beckham</p>
-                                    <p class="pair-card__date">17.04.1974</p>
-                                    <p class="pair-card__city">Harlow, Essex,<br>Англия</p>
-                                </div>
-                                <div class="pair-card__right-block">
                                     <p class="pair-card__name">David Beckham</p>
+                                </div>
+                                <div class="pair-card__dates-bg">Дата рождения</div>
+                                <div class="pair-card__dates-block">
+                                    <p class="pair-card__date">17.04.1974</p>
                                     <p class="pair-card__date">02.05.1975</p>
+                                </div>
+                                <div class="pair-card__city-bg">Место рождения</div>
+                                <div class="pair-card__city-block">
+                                    <p class="pair-card__city">Harlow, Essex,<br>Англия</p>
                                     <p class="pair-card__city">Leytonstone,<br>Англия</p>
                                 </div>
+                                <p class="pair-card__marriage">В браке с 1999 года</p><a class="pair-card__cta cta" href="#">Посмотреть отчёт</a>
                             </div>
-                            <div class="pair-card__dates-bg">Дата рождения</div>
-                            <div class="pair-card__city-bg">Место рождения</div>
-                            <p class="pair-card__marriage">В браке с 1999 года</p><a class="pair-card__cta cta" href="#">Посмотреть отчёт</a>
                         </div>
                         <div class="pairs__item pair-card _pair3"><img class="pair-card__img" src="../img/pair3.jpg" alt="Кристина Асмус и Гарик Харламов" loading="lazy">
                             <div class="pair-card__blocks">
-                                <div class="pair-card__left-block">
+                                <div class="pair-card__name-block">
                                     <p class="pair-card__name">Кристина Асмус</p>
-                                    <p class="pair-card__date">14.04.1988</p>
-                                    <p class="pair-card__city">Королёв,<br>СССР</p>
-                                </div>
-                                <div class="pair-card__right-block">
                                     <p class="pair-card__name">Гарик Харламов</p>
+                                </div>
+                                <div class="pair-card__dates-bg">Дата рождения</div>
+                                <div class="pair-card__dates-block">
+                                    <p class="pair-card__date">14.04.1988</p>
                                     <p class="pair-card__date">28.02.1981</p>
+                                </div>
+                                <div class="pair-card__city-bg">Место рождения</div>
+                                <div class="pair-card__city-block">
+                                    <p class="pair-card__city">Королёв,<br>СССР</p>
                                     <p class="pair-card__city">Москва,<br>СССР</p>
                                 </div>
+                                <p class="pair-card__marriage">В браке 2013–2020 гг.</p><a class="pair-card__cta cta" href="#">Посмотреть отчёт</a>
                             </div>
-                            <div class="pair-card__dates-bg">Дата рождения</div>
-                            <div class="pair-card__city-bg">Место рождения</div>
-                            <p class="pair-card__marriage">В браке 2013–2020 гг.</p><a class="pair-card__cta cta" href="#">Посмотреть отчёт</a>
                         </div>
                     </div>
                 </div>
@@ -455,7 +473,7 @@
         <section class="reviews" id="reviews"><img class="reviews__blobs" src="../img/Ellipse1.svg" alt="">
             <div class="reviews__container container">
                 <div class="reviews__content">
-                    <h2 class="reviews__title title"><span class="_color">Более 8000+ отзывов от звёзд</span><br>и популярных блогеров за 3 года работы</h2>
+                    <h2 class="reviews__title title"><span class="_color">Более 8000+ отзывов от звёзд</span><br> и популярных блогеров за 3 года работы</h2>
                     <div class="swiper__container">
                         <div class="reviews__slider swiper">
                             <div class="swiper-wrapper">
@@ -767,7 +785,7 @@
                                     <li class="card__item _main-title"> Индивидуальный прогноз на каждый день</li>
                                     <li class="card__item">Что несет вам каждый день вашей жизни?</li>
                                     <li class="card__item">Какое событие может произойти с вами, в чем<br> заключается ваш личный урок в определенный день?</li>
-                                </ul><a class="card__cta cta open-popup" href="#"> Начать проверку совместимости</a>
+                                </ul><a class="card__cta cta open-popup" href="#" data-da="text-advice__card, 3, 767"> Начать проверку совместимости</a>
                             </div>
                         </div>
                     </div>
@@ -781,16 +799,18 @@
                         <p class="footer__text">Узнай совместимость<br>со своим мужчиной</p><a class="footer__cta cta" href="https://web.telegram.org/#/im?p=@atmacodes_bot" target="_blank">Чат поддержки</a>
                     </div>
                     <div class="footer__contacts">
-                        <p class="footer__title">Контакты</p><a class="footer__link" href="https://t.me/atmacode" target="_blank"><img src="../img/telegram.svg" alt=""><span>@atmacode</span></a><a class="footer__link" href="mailto:info@atmacode.com"><img src="../img/mail.svg" alt=""><span>info@atmacode.com</span></a>
-                        <div class="footer__mess"><a class="footer__icon" href="https://www.instagram.com/atmacode/" target="_blank"><img src="../img/inst.svg" alt=""></a><a class="footer__icon" href="/" target="_blank"><img src="../img/vk.svg" alt=""></a><a class="footer__icon" href="/" target="_blank"><img src="../img/fb.svg" alt=""></a><a class="footer__icon" href="/" target="_blank"><img src="../img/tw.svg" alt=""></a></div>
+                        <div class="footer__links">
+                            <p class="footer__title">Контакты</p><a class="footer__link" href="https://t.me/atmacode" target="_blank"><img src="../img/telegram.svg" alt=""><span>@atmacode</span></a><a class="footer__link" href="mailto:info@atmacode.com"><img src="../img/mail.svg" alt=""><span>info@atmacode.com</span></a>
+                            <div class="footer__mess"><a class="footer__icon" href="https://www.instagram.com/atmacode/" target="_blank"><img src="../img/inst.svg" alt=""></a><a class="footer__icon" href="/" target="_blank"><img src="../img/vk.svg" alt=""></a><a class="footer__icon" href="/" target="_blank"><img src="../img/fb.svg" alt=""></a><a class="footer__icon" href="/" target="_blank"><img src="../img/tw.svg" alt=""></a></div>
+                        </div>
                     </div>
-                    <div class="footer__docs"><a class="footer__doc" href="https://atmacode.com/license" target="_blank">Договор-оферта</a><a class="footer__doc" href="https://atmacode.com/safety" target="_blank">Безопасность платежей</a><a class="footer__doc" href="https://atmacode.com/privacy" target="_blank">Политика конфиденциальности</a></div>
+                    <div class="footer__docs" data-da="footer__contacts, 1, 768"><a class="footer__doc" href="https://atmacode.com/license" target="_blank">Договор-оферта</a><a class="footer__doc" href="https://atmacode.com/safety" target="_blank">Безопасность платежей</a><a class="footer__doc" href="https://atmacode.com/privacy" target="_blank">Политика конфиденциальности</a></div>
                 </div>
             </div>
         </footer>
     </div>
     <div id="particles-js"></div>
-    <!--script(type="text/javascript" src="js/lib/dinamic.js")-->
+    <script type="text/javascript" src="js/lib/dinamic.js"></script>
     <script type="text/javascript" src="js/lib/quiz.js"></script>
     <script type="text/javascript" src="js/lib/popup.js"></script>
     <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

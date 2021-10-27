@@ -194,6 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Кнопка отправки
   btnSubmit.addEventListener("click", (event) => {
+    event.preventDefault();
     setTimeout(watchlastSlide, 200);
     function watchlastSlide() {
       form.querySelector(".form__reg").style.display = "none";
