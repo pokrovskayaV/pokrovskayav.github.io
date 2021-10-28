@@ -1,12 +1,14 @@
+//Овновной квиз (один в попапе)
+
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
-  const form = document.querySelector(".quiz__form");
+  const form = document.querySelector(".quiz__main .quiz__form");
   const formItems = form.querySelectorAll("fieldset");
   const btnsNext = form.querySelectorAll(".form__btn-next");
   const btnsPrev = form.querySelectorAll(".form__btn-prev");
-  const steps = document.querySelectorAll(".steps__item");
-  const lines = document.querySelectorAll(".progress__line");
+  const steps = document.querySelectorAll(".quiz__main .steps__item");
+  const lines = document.querySelectorAll(".quiz__main .progress__line");
   const btnSubmit = form.querySelector(".form__btn-submit");
   const lastSlide = form.querySelector(".form__send-block");
 
@@ -83,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const countryText = formItem.querySelectorAll(".form__city-qq .form__text");
     if (formItemIndex > 2) {
       countryText.forEach((country) => {
-        country.addEventListener("change", (event) => {
+        country.addEventListener("input", (event) => {
           if (
             !(
               countryText[0].value == "" ||
@@ -178,12 +180,12 @@ document.addEventListener("DOMContentLoaded", function () {
     field.addEventListener("input", () => {
       if (!(registrText[0].value == "" || registrText[1].value == "")) {
         //разблокировать кнопку
-        const name = document.querySelector(".name-block");
-        const mail = document.querySelector(".mail-block");
+        const name = document.querySelector(".quiz__main .name-block");
+        const mail = document.querySelector(".quiz__main .mail-block");
         name.innerHTML = registrText[0].value;
         mail.innerHTML = registrText[1].value;
         btnSubmit.disabled = false;
-        document.querySelector('.quiz__body').classList.remove('error');
+        document.querySelector('.quiz__main .quiz__body').classList.remove('error');
       } else {
         //заблокировать кнопку
         btnSubmit.disabled = true;
@@ -197,8 +199,8 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(watchlastSlide, 200);
     function watchlastSlide() {
       form.querySelector(".form__reg").style.display = "none";
-      document.querySelector(".quiz__header").style.display = "none";
-      document.querySelector(".quiz__footer").style.display = "none";
+      document.querySelector(".quiz__main .quiz__header").style.display = "none";
+      document.querySelector(".quiz__main .quiz__footer").style.display = "none";
       lastSlide.style.display = "flex";
     }
   });

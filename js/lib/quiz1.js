@@ -1,14 +1,14 @@
-//Квиз в конце страницы
+//Квиз в начале страницы
 
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
-  const form = document.querySelector(".quiz2 .quiz__form2");
+  const form = document.querySelector(".quiz1 .quiz__form1");
   const formItems = form.querySelectorAll("fieldset");
   const btnsNext = form.querySelectorAll(".form__btn-next");
   const btnsPrev = form.querySelectorAll(".form__btn-prev");
-  const steps = document.querySelectorAll(".quiz__steps2 .steps__item");
-  const lines = document.querySelectorAll(".quiz__progress2 .progress__line");
+  const steps = document.querySelectorAll(".quiz__steps1 .steps__item");
+  const lines = document.querySelectorAll(".quiz__progress1 .progress__line");
   const btnSubmit = form.querySelector(".form__btn-submit");
   const lastSlide = form.querySelector(".form__send-block");
 
@@ -180,12 +180,12 @@ document.addEventListener("DOMContentLoaded", function () {
     field.addEventListener("input", () => {
       if (!(registrText[0].value == "" || registrText[1].value == "")) {
         //разблокировать кнопку
-        const name = document.querySelector(".quiz2 .name-block");
-        const mail = document.querySelector(".quiz2 .mail-block");
+        const name = document.querySelector(".quiz1 .name-block");
+        const mail = document.querySelector(".quiz1 .mail-block");
         name.innerHTML = registrText[0].value;
         mail.innerHTML = registrText[1].value;
         btnSubmit.disabled = false;
-        document.querySelector('.quiz2 .quiz__body').classList.remove('error');
+        document.querySelector('.quiz1 .quiz__body').classList.remove('error');
       } else {
         //заблокировать кнопку
         btnSubmit.disabled = true;
@@ -199,8 +199,8 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(watchlastSlide, 200);
     function watchlastSlide() {
       form.querySelector(".form__reg").style.display = "none";
-      document.querySelector(".quiz2 .quiz__header").style.display = "none";
-      document.querySelector(".quiz2 .quiz__footer").style.display = "none";
+      document.querySelector(".quiz1 .quiz__header").style.display = "none";
+      document.querySelector(".quiz1 .quiz__footer").style.display = "none";
       lastSlide.style.display = "flex";
     }
   });
