@@ -14,6 +14,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   btnSubmit.disabled = true;
 
+//Запрет отправки формы по нажатию enter в текстовых полях
+  const inputs = document.querySelectorAll('.form__text');
+
+    inputs.forEach((input)=> {
+      input.addEventListener('keydown',(event)=> {
+        if(event.keyCode == 13){
+          console.log('d');
+          event.preventDefault();
+      }
+      })
+    })
+
   // Кнопка "Далее"
   btnsNext.forEach((btn, btnIndex) => {
     btn.addEventListener("click", (event) => {
@@ -104,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     }
+
 
     //Появление ошибки при незаполненных полях
 
